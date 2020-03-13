@@ -10,6 +10,6 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r ./requirements.txt
 
 # Copy local code to container image
-COPY model.py transform.py network.py ./
+COPY model.py transform.py network.py connect_s3.py ./
 
 CMD ["python", "model.py"]
